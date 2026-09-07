@@ -42,7 +42,14 @@ def logout_view(request):
 
 def lista_productos(request):
 	productos = _cargar_productos()
-	return render(request, 'catalogo/lista.html', {'productos': productos})
+	total_registros = len(productos)
+	con_stock = sum(1 for producto in productos if producto['stock'] > 0)
+	contexto = {
+		'productos': productos,
+		'total_registros': total_registros,
+		'con_stock': con_stock,
+	}
+	return render(request, 'catalogo/lista.html', contexto)
 
 
 

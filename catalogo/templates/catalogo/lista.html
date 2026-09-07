@@ -8,6 +8,19 @@
 	<span class="badge text-bg-secondary">{{ productos|length }} productos</span>
 </div>
 
+<div class="card border-0 shadow-sm mb-4">
+	<div class="card-body d-flex flex-wrap gap-4">
+		<div>
+			<div class="text-muted small">Total de productos</div>
+			<div class="fs-3 fw-bold">{{ total_registros }}</div>
+		</div>
+		<div>
+			<div class="text-muted small">Con stock disponible</div>
+			<div class="fs-3 fw-bold text-success">{{ con_stock }}</div>
+		</div>
+	</div>
+</div>
+
 <div class="table-responsive shadow-sm">
 	<table class="table table-striped table-hover align-middle mb-0 bg-white">
 		<thead class="table-dark">
@@ -25,7 +38,7 @@
 		</thead>
 		<tbody>
 			{% for producto in productos %}
-			<tr>
+			<tr{% if producto.stock == 0 %} class="table-danger"{% endif %}>
 				<td>{{ producto.id }}</td>
 				<td>
 					<img src="{{ producto.imagen }}" alt="{{ producto.nombre }}" class="img-thumbnail" width="80" height="60">
