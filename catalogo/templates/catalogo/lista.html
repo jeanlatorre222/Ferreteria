@@ -1,0 +1,52 @@
+{% extends 'catalogo/base.html' %}
+
+{% block title %}Productos | Ferretería{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+	<h1 class="h2 mb-0">Productos de ferretería</h1>
+	<span class="badge text-bg-secondary">{{ productos|length }} productos</span>
+</div>
+
+<div class="table-responsive shadow-sm">
+	<table class="table table-striped table-hover align-middle mb-0 bg-white">
+		<thead class="table-dark">
+			<tr>
+				<th scope="col">ID</th>
+				<th scope="col">Imagen</th>
+				<th scope="col">Nombre</th>
+				<th scope="col">Categoría</th>
+				<th scope="col">Precio</th>
+				<th scope="col">Stock</th>
+				{% if user.is_authenticated %}
+				<th scope="col">Acciones</th>
+				{% endif %}
+			</tr>
+		</thead>
+		<tbody>
+			{% for producto in productos %}
+			<tr>
+				<td>{{ producto.id }}</td>
+				<td>
+					<img src="{{ producto.imagen }}" alt="{{ producto.nombre }}" class="img-thumbnail" width="80" height="60">
+				</td>
+				<td>{{ producto.nombre }}</td>
+				<td>{{ producto.categoria }}</td>
+				<td>${{ producto.precio }}</td>
+				<td>{{ producto.stock }}</td>
+				{% if user.is_authenticated %}
+				<td>
+					<a href="{% url 'detalle_producto' producto.id %}" class="btn btn-primary btn-sm">Ver detalle</a>
+					<a href="{% url 'eliminar_producto' producto.id %}" class="btn btn-danger btn-sm">Eliminar</a>
+				</td>
+				{% endif %}
+			</tr>
+			{% empty %}
+			<tr>
+				<td colspan="{% if user.is_authenticated %}7{% else %}6{% endif %}" class="text-center py-4">No hay productos disponibles.</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% endblock %}

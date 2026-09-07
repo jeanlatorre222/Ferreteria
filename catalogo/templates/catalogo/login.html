@@ -1,0 +1,38 @@
+{% extends 'catalogo/base.html' %}
+
+{% block title %}Iniciar sesión | Ferretería{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h1 class="h3 mb-4">Iniciar sesión</h1>
+                <form method="post">
+                    {% csrf_token %}
+                    {% if formulario.non_field_errors %}
+                    <div class="alert alert-danger" role="alert">
+                        {{ formulario.non_field_errors }}
+                    </div>
+                    {% endif %}
+                    <div class="mb-3">
+                        <label for="id_username" class="form-label">Usuario</label>
+                        {{ formulario.username }}
+                        {% for error in formulario.username.errors %}
+                        <div class="text-danger small">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                    <div class="mb-3">
+                        <label for="id_password" class="form-label">Contraseña</label>
+                        {{ formulario.password }}
+                        {% for error in formulario.password.errors %}
+                        <div class="text-danger small">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

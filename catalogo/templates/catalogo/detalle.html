@@ -1,0 +1,26 @@
+{% extends 'catalogo/base.html' %}
+
+{% block title %}{{ producto.nombre }} | Ferretería{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+	<div class="col-12 col-lg-8">
+		<div class="card shadow-sm">
+			<img src="{{ producto.imagen }}" class="card-img-top" alt="{{ producto.nombre }}">
+			<div class="card-body">
+				<h1 class="card-title h2">{{ producto.nombre }}</h1>
+				<p class="text-muted mb-4">{{ producto.categoria }}</p>
+				<dl class="row">
+					<dt class="col-sm-4">ID</dt>
+					<dd class="col-sm-8">{{ producto.id }}</dd>
+					<dt class="col-sm-4">Precio</dt>
+					<dd class="col-sm-8">${{ producto.precio }}</dd>
+					<dt class="col-sm-4">Stock</dt>
+					<dd class="col-sm-8">{{ producto.stock }}</dd>
+				</dl>
+				<a href="{% url 'lista_productos' %}" class="btn btn-secondary">Regresar a la lista</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

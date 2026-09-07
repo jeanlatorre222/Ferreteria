@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "nombre": "Martillo de uña 16 oz",
+    "categoria": "Herramientas manuales",
+    "precio": 18,
+    "stock": 24,
+    "imagen": "https://picsum.photos/seed/martillo/640/480"
+  },
+  {
+    "id": 2,
+    "nombre": "Destornillador plano 6 mm",
+    "categoria": "Herramientas manuales",
+    "precio": 7,
+    "stock": 35,
+    "imagen": "https://picsum.photos/seed/destornillador-plano/640/480"
+  },
+  {
+    "id": 3,
+    "nombre": "Destornillador Phillips mediano",
+    "categoria": "Herramientas manuales",
+    "precio": 8,
+    "stock": 28,
+    "imagen": "https://picsum.photos/seed/destornillador-phillips/640/480"
+  },
+  {
+    "id": 4,
+    "nombre": "Alicate universal 8 pulgadas",
+    "categoria": "Herramientas manuales",
+    "precio": 16,
+    "stock": 19,
+    "imagen": "https://picsum.photos/seed/alicate/640/480"
+  },
+  {
+    "id": 5,
+    "nombre": "Llave inglesa 10 pulgadas",
+    "categoria": "Herramientas manuales",
+    "precio": 21,
+    "stock": 12,
+    "imagen": "https://picsum.photos/seed/llave-inglesa/640/480"
+  },
+  {
+    "id": 6,
+    "nombre": "Cinta métrica 5 metros",
+    "categoria": "Medición",
+    "precio": 11,
+    "stock": 31,
+    "imagen": "https://picsum.photos/seed/cinta-metrica/640/480"
+  },
+  {
+    "id": 7,
+    "nombre": "Nivel de burbuja 40 cm",
+    "categoria": "Medición",
+    "precio": 14,
+    "stock": 16,
+    "imagen": "https://picsum.photos/seed/nivel-burbuja/640/480"
+  },
+  {
+    "id": 8,
+    "nombre": "Escuadra metálica 12 pulgadas",
+    "categoria": "Medición",
+    "precio": 10,
+    "stock": 22,
+    "imagen": "https://picsum.photos/seed/escuadra/640/480"
+  },
+  {
+    "id": 9,
+    "nombre": "Serrucho de carpintero 20 pulgadas",
+    "categoria": "Corte",
+    "precio": 19,
+    "stock": 9,
+    "imagen": "https://picsum.photos/seed/serrucho/640/480"
+  },
+  {
+    "id": 10,
+    "nombre": "Cúter profesional retráctil",
+    "categoria": "Corte",
+    "precio": 6,
+    "stock": 40,
+    "imagen": "https://picsum.photos/seed/cuter/640/480"
+  },
+  {
+    "id": 11,
+    "nombre": "Hoja de sierra para metal",
+    "categoria": "Corte",
+    "precio": 4,
+    "stock": 0,
+    "imagen": "https://picsum.photos/seed/sierra-metal/640/480"
+  },
+  {
+    "id": 12,
+    "nombre": "Taladro eléctrico 600 W",
+    "categoria": "Herramientas eléctricas",
+    "precio": 75,
+    "stock": 8,
+    "imagen": "https://picsum.photos/seed/taladro/640/480"
+  },
+  {
+    "id": 13,
+    "nombre": "Broca para concreto 8 mm",
+    "categoria": "Accesorios eléctricos",
+    "precio": 5,
+    "stock": 27,
+    "imagen": "https://picsum.photos/seed/broca-concreto/640/480"
+  },
+  {
+    "id": 14,
+    "nombre": "Broca para madera 10 mm",
+    "categoria": "Accesorios eléctricos",
+    "precio": 5,
+    "stock": 23,
+    "imagen": "https://picsum.photos/seed/broca-madera/640/480"
+  },
+  {
+    "id": 15,
+    "nombre": "Disco de corte para metal 115 mm",
+    "categoria": "Accesorios eléctricos",
+    "precio": 3,
+    "stock": 45,
+    "imagen": "https://picsum.photos/seed/disco-corte/640/480"
+  },
+  {
+    "id": 16,
+    "nombre": "Lijadora orbital 240 W",
+    "categoria": "Herramientas eléctricas",
+    "precio": 68,
+    "stock": 0,
+    "imagen": "https://picsum.photos/seed/lijadora/640/480"
+  },
+  {
+    "id": 17,
+    "nombre": "Guantes de trabajo reforzados",
+    "categoria": "Seguridad",
+    "precio": 9,
+    "stock": 34,
+    "imagen": "https://picsum.photos/seed/guantes-trabajo/640/480"
+  },
+  {
+    "id": 18,
+    "nombre": "Gafas de protección transparentes",
+    "categoria": "Seguridad",
+    "precio": 6,
+    "stock": 29,
+    "imagen": "https://picsum.photos/seed/gafas-proteccion/640/480"
+  },
+  {
+    "id": 19,
+    "nombre": "Mascarilla antipolvo reutilizable",
+    "categoria": "Seguridad",
+    "precio": 12,
+    "stock": 18,
+    "imagen": "https://picsum.photos/seed/mascarilla/640/480"
+  },
+  {
+    "id": 20,
+    "nombre": "Casco de seguridad amarillo",
+    "categoria": "Seguridad",
+    "precio": 15,
+    "stock": 0,
+    "imagen": "https://picsum.photos/seed/casco-seguridad/640/480"
+  },
+  {
+    "id": 21,
+    "nombre": "Tornillo para madera 4 x 40 mm",
+    "categoria": "Tornillería",
+    "precio": 8,
+    "stock": 120,
+    "imagen": "https://picsum.photos/seed/tornillo-madera/640/480"
+  },
+  {
+    "id": 22,
+    "nombre": "Tornillo autorroscante 3 x 25 mm",
+    "categoria": "Tornillería",
+    "precio": 7,
+    "stock": 95,
+    "imagen": "https://picsum.photos/seed/tornillo-autorroscante/640/480"
+  },
+  {
+    "id": 23,
+    "nombre": "Tuerca hexagonal M8",
+    "categoria": "Tornillería",
+    "precio": 2,
+    "stock": 150,
+    "imagen": "https://picsum.photos/seed/tuerca-hexagonal/640/480"
+  },
+  {
+    "id": 24,
+    "nombre": "Arandela plana M8",
+    "categoria": "Tornillería",
+    "precio": 1,
+    "stock": 200,
+    "imagen": "https://picsum.photos/seed/arandela/640/480"
+  },
+  {
+    "id": 25,
+    "nombre": "Anclaje plástico 8 mm",
+    "categoria": "Fijaciones",
+    "precio": 3,
+    "stock": 75,
+    "imagen": "https://picsum.photos/seed/anclaje-plastico/640/480"
+  },
+  {
+    "id": 26,
+    "nombre": "Taco metálico expansivo M8",
+    "categoria": "Fijaciones",
+    "precio": 6,
+    "stock": 0,
+    "imagen": "https://picsum.photos/seed/taco-metalico/640/480"
+  },
+  {
+    "id": 27,
+    "nombre": "Cola blanca para madera 250 ml",
+    "categoria": "Adhesivos",
+    "precio": 9,
+    "stock": 26,
+    "imagen": "https://picsum.photos/seed/cola-madera/640/480"
+  },
+  {
+    "id": 28,
+    "nombre": "Silicona transparente 280 ml",
+    "categoria": "Adhesivos",
+    "precio": 8,
+    "stock": 21,
+    "imagen": "https://picsum.photos/seed/silicona/640/480"
+  },
+  {
+    "id": 29,
+    "nombre": "Cinta adhesiva de doble cara",
+    "categoria": "Adhesivos",
+    "precio": 5,
+    "stock": 32,
+    "imagen": "https://picsum.photos/seed/cinta-adhesiva/640/480"
+  },
+  {
+    "id": 30,
+    "nombre": "Espuma expansiva 750 ml",
+    "categoria": "Selladores",
+    "precio": 13,
+    "stock": 0,
+    "imagen": "https://picsum.photos/seed/espuma-expansiva/640/480"
+  },
+  {
+    "id": 31,
+    "nombre": "Pintura acrílica blanca 1 litro",
+    "categoria": "Pinturas",
+    "precio": 17,
+    "stock": 14,
+    "imagen": "https://picsum.photos/seed/pintura-acrilica/640/480"
+  },
+  {
+    "id": 32,
+    "nombre": "Rodillo para pintar 9 pulgadas",
+    "categoria": "Pinturas",
+    "precio": 10,
+    "stock": 20,
+    "imagen": "https://picsum.photos/seed/rodillo-pintura/640/480"
+  },
+  {
+    "id": 33,
+    "nombre": "Brocha plana 2 pulgadas",
+    "categoria": "Pinturas",
+    "precio": 6,
+    "stock": 25,
+    "imagen": "https://picsum.photos/seed/brocha/640/480"
+  },
+  {
+    "id": 34,
+    "nombre": "Bandeja para pintura mediana",
+    "categoria": "Pinturas",
+    "precio": 7,
+    "stock": 0,
+    "imagen": "https://picsum.photos/seed/bandeja-pintura/640/480"
+  },
+  {
+    "id": 35,
+    "nombre": "Manguera reforzada 15 metros",
+    "categoria": "Jardinería",
+    "precio": 29,
+    "stock": 11,
+    "imagen": "https://picsum.photos/seed/manguera/640/480"
+  },
+  {
+    "id": 36,
+    "nombre": "Pistola de riego regulable",
+    "categoria": "Jardinería",
+    "precio": 14,
+    "stock": 17,
+    "imagen": "https://picsum.photos/seed/pistola-riego/640/480"
+  },
+  {
+    "id": 37,
+    "nombre": "Pala de jardín con mango",
+    "categoria": "Jardinería",
+    "precio": 18,
+    "stock": 13,
+    "imagen": "https://picsum.photos/seed/pala-jardin/640/480"
+  },
+  {
+    "id": 38,
+    "nombre": "Candado de latón 40 mm",
+    "categoria": "Cerrajería",
+    "precio": 16,
+    "stock": 0,
+    "imagen": "https://picsum.photos/seed/candado/640/480"
+  },
+  {
+    "id": 39,
+    "nombre": "Bisagra reforzada 3 pulgadas",
+    "categoria": "Herrajes",
+    "precio": 4,
+    "stock": 38,
+    "imagen": "https://picsum.photos/seed/bisagra/640/480"
+  },
+  {
+    "id": 40,
+    "nombre": "Cerrojo para puerta  invierno",
+    "categoria": "Cerrajería",
+    "precio": 22,
+    "stock": 0,
+    "imagen": "https://picsum.photos/seed/cerrojo/640/480"
+  }
+]
