@@ -5,7 +5,7 @@
     "categoria": "Herramientas manuales",
     "precio": 18,
     "stock": 24,
-    "imagen": "https://picsum.photos/seed/martillo/640/480"
+    "imagen": "https://loremflickr.com/640/480/hammer,tool?lock=1"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "categoria": "Herramientas manuales",
     "precio": 7,
     "stock": 35,
-    "imagen": "https://picsum.photos/seed/destornillador-plano/640/480"
+    "imagen": "https://loremflickr.com/640/480/flathead,screwdriver?lock=2"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "categoria": "Herramientas manuales",
     "precio": 8,
     "stock": 28,
-    "imagen": "https://picsum.photos/seed/destornillador-phillips/640/480"
+    "imagen": "https://loremflickr.com/640/480/phillips,screwdriver?lock=3"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "categoria": "Herramientas manuales",
     "precio": 16,
     "stock": 19,
-    "imagen": "https://picsum.photos/seed/alicate/640/480"
+    "imagen": "https://loremflickr.com/640/480/pliers,tool?lock=4"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "categoria": "Herramientas manuales",
     "precio": 21,
     "stock": 12,
-    "imagen": "https://picsum.photos/seed/llave-inglesa/640/480"
+    "imagen": "https://loremflickr.com/640/480/adjustable,wrench?lock=5"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "categoria": "Medición",
     "precio": 11,
     "stock": 31,
-    "imagen": "https://picsum.photos/seed/cinta-metrica/640/480"
+    "imagen": "https://loremflickr.com/640/480/tape,measure?lock=6"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "categoria": "Medición",
     "precio": 14,
     "stock": 16,
-    "imagen": "https://picsum.photos/seed/nivel-burbuja/640/480"
+    "imagen": "https://loremflickr.com/640/480/spirit,level,tool?lock=7"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "categoria": "Medición",
     "precio": 10,
     "stock": 22,
-    "imagen": "https://picsum.photos/seed/escuadra/640/480"
+    "imagen": "https://loremflickr.com/640/480/metal,square,tool?lock=8"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "categoria": "Corte",
     "precio": 19,
     "stock": 9,
-    "imagen": "https://picsum.photos/seed/serrucho/640/480"
+    "imagen": "https://loremflickr.com/640/480/hand,saw,wood?lock=9"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "categoria": "Corte",
     "precio": 6,
     "stock": 40,
-    "imagen": "https://picsum.photos/seed/cuter/640/480"
+    "imagen": "https://loremflickr.com/640/480/utility,knife,tool?lock=10"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "categoria": "Corte",
     "precio": 4,
     "stock": 0,
-    "imagen": "https://picsum.photos/seed/sierra-metal/640/480"
+    "imagen": "https://loremflickr.com/640/480/hacksaw,metal?lock=11"
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@
     "categoria": "Herramientas eléctricas",
     "precio": 75,
     "stock": 8,
-    "imagen": "https://picsum.photos/seed/taladro/640/480"
+    "imagen": "https://loremflickr.com/640/480/electric,drill,tool?lock=12"
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@
     "categoria": "Accesorios eléctricos",
     "precio": 5,
     "stock": 27,
-    "imagen": "https://picsum.photos/seed/broca-concreto/640/480"
+    "imagen": "https://loremflickr.com/640/480/concrete,drill,bit?lock=13"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "categoria": "Accesorios eléctricos",
     "precio": 5,
     "stock": 23,
-    "imagen": "https://picsum.photos/seed/broca-madera/640/480"
+    "imagen": "https://loremflickr.com/640/480/wood,drill,bit?lock=14"
   },
   {
     "id": 15,
@@ -117,7 +117,7 @@
     "categoria": "Accesorios eléctricos",
     "precio": 3,
     "stock": 45,
-    "imagen": "https://picsum.photos/seed/disco-corte/640/480"
+    "imagen": "https://loremflickr.com/640/480/cutting,disc,metal?lock=15"
   },
   {
     "id": 16,
@@ -125,7 +125,7 @@
     "categoria": "Herramientas eléctricas",
     "precio": 68,
     "stock": 0,
-    "imagen": "https://picsum.photos/seed/lijadora/640/480"
+    "imagen": "https://loremflickr.com/640/480/orbital,sander,tool?lock=16"
   },
   {
     "id": 17,
@@ -133,7 +133,7 @@
     "categoria": "Seguridad",
     "precio": 9,
     "stock": 34,
-    "imagen": "https://picsum.photos/seed/guantes-trabajo/640/480"
+    "imagen": "https://loremflickr.com/640/480/work,gloves,safety?lock=17"
   },
   {
     "id": 18,
@@ -141,7 +141,7 @@
     "categoria": "Seguridad",
     "precio": 6,
     "stock": 29,
-    "imagen": "https://picsum.photos/seed/gafas-proteccion/640/480"
+    "imagen": "https://loremflickr.com/640/480/safety,goggles,work?lock=18"
   },
   {
     "id": 19,
@@ -149,7 +149,7 @@
     "categoria": "Seguridad",
     "precio": 12,
     "stock": 18,
-    "imagen": "https://picsum.photos/seed/mascarilla/640/480"
+    "imagen": "https://loremflickr.com/640/480/dust,mask,safety?lock=19"
   },
   {
     "id": 20,
@@ -157,7 +157,7 @@
     "categoria": "Seguridad",
     "precio": 15,
     "stock": 0,
-    "imagen": "https://picsum.photos/seed/casco-seguridad/640/480"
+    "imagen": "https://loremflickr.com/640/480/hardhat,safety,helmet?lock=20"
   },
   {
     "id": 21,
@@ -165,7 +165,7 @@
     "categoria": "Tornillería",
     "precio": 8,
     "stock": 120,
-    "imagen": "https://picsum.photos/seed/tornillo-madera/640/480"
+    "imagen": "https://loremflickr.com/640/480/wood,screw,hardware?lock=21"
   },
   {
     "id": 22,
@@ -173,7 +173,7 @@
     "categoria": "Tornillería",
     "precio": 7,
     "stock": 95,
-    "imagen": "https://picsum.photos/seed/tornillo-autorroscante/640/480"
+    "imagen": "https://loremflickr.com/640/480/self,tapping,screw?lock=22"
   },
   {
     "id": 23,
@@ -181,7 +181,7 @@
     "categoria": "Tornillería",
     "precio": 2,
     "stock": 150,
-    "imagen": "https://picsum.photos/seed/tuerca-hexagonal/640/480"
+    "imagen": "https://loremflickr.com/640/480/hex,nut,hardware?lock=23"
   },
   {
     "id": 24,
@@ -189,7 +189,7 @@
     "categoria": "Tornillería",
     "precio": 1,
     "stock": 200,
-    "imagen": "https://picsum.photos/seed/arandela/640/480"
+    "imagen": "https://loremflickr.com/640/480/washer,hardware?lock=24"
   },
   {
     "id": 25,
@@ -197,7 +197,7 @@
     "categoria": "Fijaciones",
     "precio": 3,
     "stock": 75,
-    "imagen": "https://picsum.photos/seed/anclaje-plastico/640/480"
+    "imagen": "https://loremflickr.com/640/480/plastic,wall,anchor?lock=25"
   },
   {
     "id": 26,
@@ -205,7 +205,7 @@
     "categoria": "Fijaciones",
     "precio": 6,
     "stock": 0,
-    "imagen": "https://picsum.photos/seed/taco-metalico/640/480"
+    "imagen": "https://loremflickr.com/640/480/metal,wall,anchor?lock=26"
   },
   {
     "id": 27,
@@ -213,7 +213,7 @@
     "categoria": "Adhesivos",
     "precio": 9,
     "stock": 26,
-    "imagen": "https://picsum.photos/seed/cola-madera/640/480"
+    "imagen": "https://loremflickr.com/640/480/wood,glue,adhesive?lock=27"
   },
   {
     "id": 28,
@@ -221,7 +221,7 @@
     "categoria": "Adhesivos",
     "precio": 8,
     "stock": 21,
-    "imagen": "https://picsum.photos/seed/silicona/640/480"
+    "imagen": "https://loremflickr.com/640/480/silicone,sealant,caulk?lock=28"
   },
   {
     "id": 29,
@@ -229,7 +229,7 @@
     "categoria": "Adhesivos",
     "precio": 5,
     "stock": 32,
-    "imagen": "https://picsum.photos/seed/cinta-adhesiva/640/480"
+    "imagen": "https://loremflickr.com/640/480/double,sided,tape?lock=29"
   },
   {
     "id": 30,
@@ -237,7 +237,7 @@
     "categoria": "Selladores",
     "precio": 13,
     "stock": 0,
-    "imagen": "https://picsum.photos/seed/espuma-expansiva/640/480"
+    "imagen": "https://loremflickr.com/640/480/expanding,foam,sealant?lock=30"
   },
   {
     "id": 31,
@@ -245,7 +245,7 @@
     "categoria": "Pinturas",
     "precio": 17,
     "stock": 14,
-    "imagen": "https://picsum.photos/seed/pintura-acrilica/640/480"
+    "imagen": "https://loremflickr.com/640/480/acrylic,paint,can?lock=31"
   },
   {
     "id": 32,
@@ -253,7 +253,7 @@
     "categoria": "Pinturas",
     "precio": 10,
     "stock": 20,
-    "imagen": "https://picsum.photos/seed/rodillo-pintura/640/480"
+    "imagen": "https://loremflickr.com/640/480/paint,roller,wall?lock=32"
   },
   {
     "id": 33,
@@ -261,7 +261,7 @@
     "categoria": "Pinturas",
     "precio": 6,
     "stock": 25,
-    "imagen": "https://picsum.photos/seed/brocha/640/480"
+    "imagen": "https://loremflickr.com/640/480/paint,brush,wall?lock=33"
   },
   {
     "id": 34,
@@ -269,7 +269,7 @@
     "categoria": "Pinturas",
     "precio": 7,
     "stock": 0,
-    "imagen": "https://picsum.photos/seed/bandeja-pintura/640/480"
+    "imagen": "https://loremflickr.com/640/480/paint,tray,painting?lock=34"
   },
   {
     "id": 35,
@@ -277,7 +277,7 @@
     "categoria": "Jardinería",
     "precio": 29,
     "stock": 11,
-    "imagen": "https://picsum.photos/seed/manguera/640/480"
+    "imagen": "https://loremflickr.com/640/480/garden,hose,watering?lock=35"
   },
   {
     "id": 36,
@@ -285,7 +285,7 @@
     "categoria": "Jardinería",
     "precio": 14,
     "stock": 17,
-    "imagen": "https://picsum.photos/seed/pistola-riego/640/480"
+    "imagen": "https://loremflickr.com/640/480/garden,spray,nozzle?lock=36"
   },
   {
     "id": 37,
@@ -293,7 +293,7 @@
     "categoria": "Jardinería",
     "precio": 18,
     "stock": 13,
-    "imagen": "https://picsum.photos/seed/pala-jardin/640/480"
+    "imagen": "https://loremflickr.com/640/480/garden,shovel,tool?lock=37"
   },
   {
     "id": 38,
@@ -301,7 +301,7 @@
     "categoria": "Cerrajería",
     "precio": 16,
     "stock": 0,
-    "imagen": "https://picsum.photos/seed/candado/640/480"
+    "imagen": "https://loremflickr.com/640/480/padlock,brass,lock?lock=38"
   },
   {
     "id": 39,
@@ -309,7 +309,7 @@
     "categoria": "Herrajes",
     "precio": 4,
     "stock": 38,
-    "imagen": "https://picsum.photos/seed/bisagra/640/480"
+    "imagen": "https://loremflickr.com/640/480/door,hinge,hardware?lock=39"
   },
   {
     "id": 40,
@@ -317,6 +317,6 @@
     "categoria": "Cerrajería",
     "precio": 22,
     "stock": 0,
-    "imagen": "https://picsum.photos/seed/cerrojo/640/480"
+    "imagen": "https://loremflickr.com/640/480/door,bolt,latch?lock=40"
   }
 ]
