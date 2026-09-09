@@ -66,6 +66,9 @@
 				<td>{{ producto.stock }}</td>
 				<td>
 					<a href="{% url 'detalle_producto' producto.id %}" class="btn btn-primary btn-sm">Ver Detalle</a>
+					{% if producto.stock > 0 %}
+					<a href="{% url 'agregar_al_carrito' producto.id %}" class="btn btn-success btn-sm">Agregar al carrito</a>
+					{% endif %}
 				</td>
 				{% if user.is_authenticated %}
 				<td>

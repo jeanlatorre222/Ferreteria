@@ -4,32 +4,32 @@
     "nombre": "Martillo de uña 16 oz",
     "categoria": "Herramientas manuales",
     "precio": 18,
-    "stock": 24,
-    "imagen": "https://loremflickr.com/640/480/hammer,tool?lock=1"
+    "stock": 23,
+    "imagen": "https://olateferreteria.cl/wp-content/uploads/2025/01/Martillo-Carpintero-Una-Curva-16oz-TRUPER.png"
   },
   {
     "id": 2,
     "nombre": "Destornillador plano 6 mm",
     "categoria": "Herramientas manuales",
     "precio": 7,
-    "stock": 35,
-    "imagen": "https://loremflickr.com/640/480/flathead,screwdriver?lock=2"
+    "stock": 34,
+    "imagen": "https://i5.walmartimages.cl/asr/47983451-fd94-453f-b785-734db9b40656.ce572dbf1072e7e4d99f656d8d59ed0f.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
   },
   {
     "id": 3,
     "nombre": "Destornillador Phillips mediano",
     "categoria": "Herramientas manuales",
     "precio": 8,
-    "stock": 28,
-    "imagen": "https://loremflickr.com/640/480/phillips,screwdriver?lock=3"
+    "stock": 27,
+    "imagen": "https://media.witglobal.net/source/eshop/stmedia/0100/images/std.lang.all/resolutions/category/200px/151303.jpg"
   },
   {
     "id": 4,
     "nombre": "Alicate universal 8 pulgadas",
     "categoria": "Herramientas manuales",
     "precio": 16,
-    "stock": 19,
-    "imagen": "https://loremflickr.com/640/480/pliers,tool?lock=4"
+    "stock": 18,
+    "imagen": "https://www.weitzler.cl/bitobee/wp-content/uploads/2022/11/65002100003.jpg"
   },
   {
     "id": 5,
@@ -53,7 +53,7 @@
     "categoria": "Medición",
     "precio": 14,
     "stock": 16,
-    "imagen": "https://loremflickr.com/640/480/spirit,level,tool?lock=7"
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_654054-MLU76381289248_052024-O.webp"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "categoria": "Corte",
     "precio": 19,
     "stock": 9,
-    "imagen": "https://loremflickr.com/640/480/hand,saw,wood?lock=9"
+    "imagen": "https://cdnx.jumpseller.com/casa-contigo/image/47103789/HAND_SAW.png?1711653514"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "categoria": "Corte",
     "precio": 6,
     "stock": 40,
-    "imagen": "https://loremflickr.com/640/480/utility,knife,tool?lock=10"
+    "imagen": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRa89-awjDdknT33v9mPjPhQQ85LmqWAD1HXGo73rIItr8wYbqR2ODT5WpPzfVQGOrm_mfy0wiAQFYP6VmoU5CN5Ohfsyi-"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "categoria": "Corte",
     "precio": 4,
     "stock": 0,
-    "imagen": "https://loremflickr.com/640/480/hacksaw,metal?lock=11"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnwRE7nyoNDB5evr7Jnq4TRc8XYunH16GXBCEisyBI6FqLTFvdzOEKxalA&s=10"
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@
     "categoria": "Herramientas eléctricas",
     "precio": 75,
     "stock": 8,
-    "imagen": "https://loremflickr.com/640/480/electric,drill,tool?lock=12"
+    "imagen": "https://cdnx.jumpseller.com/www-san-antonio-cl/image/49717084/resize/1200/1200?1718290292"
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@
     "categoria": "Accesorios eléctricos",
     "precio": 5,
     "stock": 27,
-    "imagen": "https://loremflickr.com/640/480/concrete,drill,bit?lock=13"
+    "imagen": "https://cdnx.jumpseller.com/ferroelectronic/image/37253613/044650.png?1697570988"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "categoria": "Accesorios eléctricos",
     "precio": 5,
     "stock": 23,
-    "imagen": "https://loremflickr.com/640/480/wood,drill,bit?lock=14"
+    "imagen": "https://isesacl.vtexassets.com/arquivos/ids/155790/broca_madera_hss_cv_profi_holz_alpen_1_8.jpg?v=637178017185670000"
   },
   {
     "id": 15,
@@ -133,7 +133,7 @@
     "categoria": "Seguridad",
     "precio": 9,
     "stock": 34,
-    "imagen": "https://loremflickr.com/640/480/work,gloves,safety?lock=17"
+    "imagen": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTYCgu4CydC9Y56C9wuwa8JW95txKGacU2xT_43NTIfCQDSU8h0T7hZdyx7K9PoCFicK3n5c_ugIuGV3qfz1oRV4T5RN9DGqQJtWDZw9CbS9h5-AoR1JI837A"
   },
   {
     "id": 18,
@@ -141,7 +141,7 @@
     "categoria": "Seguridad",
     "precio": 6,
     "stock": 29,
-    "imagen": "https://loremflickr.com/640/480/safety,goggles,work?lock=18"
+    "imagen": "https://bioquimica.cl/wp-content/uploads/2026/06/qw66fgevu1npsg0dsl2h_2196x1260.webp"
   },
   {
     "id": 19,
@@ -149,7 +149,7 @@
     "categoria": "Seguridad",
     "precio": 12,
     "stock": 18,
-    "imagen": "https://loremflickr.com/640/480/dust,mask,safety?lock=19"
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_914865-CBT113335565849_062026-O-mascarilla-antipolvo-reutilizable-con-filtro-de-carbon.webp"
   },
   {
     "id": 20,
@@ -157,7 +157,7 @@
     "categoria": "Seguridad",
     "precio": 15,
     "stock": 0,
-    "imagen": "https://loremflickr.com/640/480/hardhat,safety,helmet?lock=20"
+    "imagen": "https://assetlibrary.msasafety.com/transform/4acb7d64-580e-4e0b-b813-1030c7853335/V-GardH1SafetyHelmet_000060003700001001?io=transform:extend,height:500,width:500,background:FFFFFF"
   },
   {
     "id": 21,
@@ -165,7 +165,7 @@
     "categoria": "Tornillería",
     "precio": 8,
     "stock": 120,
-    "imagen": "https://loremflickr.com/640/480/wood,screw,hardware?lock=21"
+    "imagen": "https://www.imperial.cl/ccstore/v1/images/?source=/file/v5915130982824651492/products/145572-1.jpg"
   },
   {
     "id": 22,
@@ -173,7 +173,7 @@
     "categoria": "Tornillería",
     "precio": 7,
     "stock": 95,
-    "imagen": "https://loremflickr.com/640/480/self,tapping,screw?lock=22"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbRQ92oZgHwG8xmH0N8W8-pQBQQl45ShpZeRTP4_gAoA&s=10"
   },
   {
     "id": 23,
@@ -181,7 +181,7 @@
     "categoria": "Tornillería",
     "precio": 2,
     "stock": 150,
-    "imagen": "https://loremflickr.com/640/480/hex,nut,hardware?lock=23"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQliKXgpRW4V7Z3v75QBroy8fgSTP4zS45WwKAkIObuTw&s"
   },
   {
     "id": 24,
@@ -189,7 +189,7 @@
     "categoria": "Tornillería",
     "precio": 1,
     "stock": 200,
-    "imagen": "https://loremflickr.com/640/480/washer,hardware?lock=24"
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_610852-CBT111710649184_062026-O-arandela-plana-m8-de-acero-304-85-x-16-x-1-mm-40-unidades.webp"
   },
   {
     "id": 25,
@@ -197,7 +197,7 @@
     "categoria": "Fijaciones",
     "precio": 3,
     "stock": 75,
-    "imagen": "https://loremflickr.com/640/480/plastic,wall,anchor?lock=25"
+    "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_990801-MLA99579775460_122025-P.webp"
   },
   {
     "id": 26,
@@ -213,7 +213,7 @@
     "categoria": "Adhesivos",
     "precio": 9,
     "stock": 26,
-    "imagen": "https://loremflickr.com/640/480/wood,glue,adhesive?lock=27"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxFmdyePaa_PJtlBak2kRszoWHUxekfKXe77n2YvDHuA&s=10"
   },
   {
     "id": 28,
@@ -221,7 +221,7 @@
     "categoria": "Adhesivos",
     "precio": 8,
     "stock": 21,
-    "imagen": "https://loremflickr.com/640/480/silicone,sealant,caulk?lock=28"
+    "imagen": "https://www.construmart.cl/media/catalog/product/s/i/silicona-aceitica-universal-multiuso-280-ml-transp-244398-1_v3vbr7d79d2i9x72.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
   },
   {
     "id": 29,
@@ -229,58 +229,50 @@
     "categoria": "Adhesivos",
     "precio": 5,
     "stock": 32,
-    "imagen": "https://loremflickr.com/640/480/double,sided,tape?lock=29"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlonwGHmVC9PgbI8ev-Mt4q9Oq-bStcN8VKHcLvuZ4H99bl9hhnBWqM9w&s=10"
   },
   {
     "id": 30,
-    "nombre": "Espuma expansiva 750 ml",
-    "categoria": "Selladores",
-    "precio": 13,
-    "stock": 0,
-    "imagen": "https://loremflickr.com/640/480/expanding,foam,sealant?lock=30"
-  },
-  {
-    "id": 31,
     "nombre": "Pintura acrílica blanca 1 litro",
     "categoria": "Pinturas",
     "precio": 17,
     "stock": 14,
-    "imagen": "https://loremflickr.com/640/480/acrylic,paint,can?lock=31"
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_882128-MLA105117992730_012026-O.webp"
   },
   {
-    "id": 32,
+    "id": 31,
     "nombre": "Rodillo para pintar 9 pulgadas",
     "categoria": "Pinturas",
     "precio": 10,
     "stock": 20,
-    "imagen": "https://loremflickr.com/640/480/paint,roller,wall?lock=32"
+    "imagen": "https://cdnx.jumpseller.com/casa-contigo/image/42251860/resize/610/610?1700243018"
   },
   {
-    "id": 33,
+    "id": 32,
     "nombre": "Brocha plana 2 pulgadas",
     "categoria": "Pinturas",
     "precio": 6,
     "stock": 25,
-    "imagen": "https://loremflickr.com/640/480/paint,brush,wall?lock=33"
+    "imagen": "https://cdnx.jumpseller.com/a-los-pits/image/68904769/ChatGPT_20Image_2019_20oct_202025_2C_2000_11_52.png?1761068168"
   },
   {
-    "id": 34,
+    "id": 33,
     "nombre": "Bandeja para pintura mediana",
     "categoria": "Pinturas",
     "precio": 7,
     "stock": 0,
-    "imagen": "https://loremflickr.com/640/480/paint,tray,painting?lock=34"
+    "imagen": "https://cdnx.jumpseller.com/tecnocomae/image/45232861/Bandeja_Pl_stica_Pintura.png?1707174979"
   },
   {
-    "id": 35,
+    "id": 34,
     "nombre": "Manguera reforzada 15 metros",
     "categoria": "Jardinería",
     "precio": 29,
     "stock": 11,
-    "imagen": "https://loremflickr.com/640/480/garden,hose,watering?lock=35"
+    "imagen": "https://www.miferreteria.cl/wp-content/uploads/2025/08/manguera-riego-1-2x15-metros-everest-kg01-1215.jpg"
   },
   {
-    "id": 36,
+    "id": 35,
     "nombre": "Pistola de riego regulable",
     "categoria": "Jardinería",
     "precio": 14,
@@ -288,35 +280,43 @@
     "imagen": "https://loremflickr.com/640/480/garden,spray,nozzle?lock=36"
   },
   {
-    "id": 37,
+    "id": 36,
     "nombre": "Pala de jardín con mango",
     "categoria": "Jardinería",
     "precio": 18,
     "stock": 13,
-    "imagen": "https://loremflickr.com/640/480/garden,shovel,tool?lock=37"
+    "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhL-xnDMsUN1eNYGGFy2qYFWFK1vpWYmTMDxe4_3J5CM8yjOnuTMpGif2G&s=10"
   },
   {
-    "id": 38,
+    "id": 37,
     "nombre": "Candado de latón 40 mm",
     "categoria": "Cerrajería",
     "precio": 16,
     "stock": 0,
-    "imagen": "https://loremflickr.com/640/480/padlock,brass,lock?lock=38"
+    "imagen": "https://sanchezysanchez.cl/1769-home_default/candado-de-laton-40mm-con-llave.jpg"
   },
   {
-    "id": 39,
+    "id": 38,
     "nombre": "Bisagra reforzada 3 pulgadas",
     "categoria": "Herrajes",
     "precio": 4,
     "stock": 38,
-    "imagen": "https://loremflickr.com/640/480/door,hinge,hardware?lock=39"
+    "imagen": "https://http2.mlstatic.com/D_NQ_NP_907006-MLU74387580095_022024-O.webp"
   },
   {
-    "id": 40,
+    "id": 39,
     "nombre": "Cerrojo para puerta  invierno",
     "categoria": "Cerrajería",
     "precio": 22,
     "stock": 0,
-    "imagen": "https://loremflickr.com/640/480/door,bolt,latch?lock=40"
+    "imagen": "https://media.falabella.com/falabellaCL/148859167_01/w=1500,h=1500,fit=cover"
+  },
+  {
+    "id": 40,
+    "nombre": "Espuma expansiva 750 ml",
+    "categoria": "Adhesivos",
+    "precio": 8,
+    "stock": 18,
+    "imagen": "https://dojiw2m9tvv09.cloudfront.net/44838/product/X_new-template-photoroom-529593.png?2506&t=1788312469"
   }
 ]

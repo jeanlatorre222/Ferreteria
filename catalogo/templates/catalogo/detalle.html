@@ -18,6 +18,9 @@
 					<dt class="col-sm-4">Stock</dt>
 					<dd class="col-sm-8">{{ producto.stock }}</dd>
 				</dl>
+				{% if producto.stock > 0 %}
+				<a href="{% url 'agregar_al_carrito' producto.id %}" class="btn btn-success">Agregar al carrito</a>
+				{% endif %}
 				<a href="{% url 'lista_productos' %}" class="btn btn-secondary">Regresar a la lista</a>
 			</div>
 		</div>

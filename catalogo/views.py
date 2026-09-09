@@ -7,9 +7,11 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
 from django.http import Http404, HttpResponse
 from django.shortcuts import redirect, render
+from django.urls import reverse
 
 
 PRODUCTOS_JSON = Path(settings.BASE_DIR) / 'catalogo' / 'data' / 'productos.json'
+CLAVE_CARRITO = 'carrito'
 
 
 def _cargar_productos():
@@ -38,6 +40,10 @@ def login_view(request):
 def logout_view(request):
 	logout(request)
 	return redirect('lista_productos')
+
+
+def landing_page(request):
+	return render(request, 'catalogo/landing.html')
 
 
 def lista_productos(request):
@@ -75,6 +81,81 @@ def detalle_producto(request, producto_id):
 		raise Http404('Producto no encontrado')
 
 	return render(request, 'catalogo/detalle.html', {'producto': producto})
+
+
+def _buscar_producto(productos, producto_id):
+	return next((producto for producto in productos if producto['id'] == producto_id), None)
+
+
+def agregar_al_carrito(request, producto_id):
+	productos = _cargar_productos()
+	producto = _buscar_producto(productos, producto_id)
+
+	if producto is None:
+		raise Http404('Producto no encontrado')
+	if producto['stock'] <= 0:
+		raise Http404('Producto sin stock')
+
+	carrito = request.session.get(CLAVE_CARRITO, {})
+	cantidad_actual = int(carrito.get(str(producto_id), 0))
+	carrito[str(producto_id)] = min(cantidad_actual + 1, producto['stock'])
+	request.session[CLAVE_CARRITO] = carrito
+	return redirect('lista_productos')
+
+
+def sumar_carrito(request, producto_id):
+	agregar_al_carrito(request, producto_id)
+	return redirect(f"{reverse('lista_productos')}?carrito=abierto#carritoOffcanvas")
+
+
+def restar_carrito(request, producto_id):
+	carrito = request.session.get(CLAVE_CARRITO, {})
+	clave_producto = str(producto_id)
+
+	if clave_producto in carrito:
+		cantidad = int(carrito[clave_producto]) - 1
+		if cantidad > 0:
+			carrito[clave_producto] = cantidad
+		else:
+			carrito.pop(clave_producto)
+
+	request.session[CLAVE_CARRITO] = carrito
+	return redirect(f"{reverse('lista_productos')}?carrito=abierto#carritoOffcanvas")
+
+
+def eliminar_del_carrito(request, producto_id):
+	carrito = request.session.get(CLAVE_CARRITO, {})
+	carrito.pop(str(producto_id), None)
+	request.session[CLAVE_CARRITO] = carrito
+	return redirect(f"{reverse('lista_productos')}?carrito=abierto#carritoOffcanvas")
+
+
+def vaciar_carrito(request):
+	request.session.pop(CLAVE_CARRITO, None)
+	return redirect(f"{reverse('lista_productos')}?carrito=abierto#carritoOffcanvas")
+
+
+def finalizar_compra(request):
+	carrito = request.session.get(CLAVE_CARRITO, {})
+	productos = _cargar_productos()
+
+	seleccionados = []
+	for clave_producto, cantidad in carrito.items():
+		producto_id = int(clave_producto)
+		producto = _buscar_producto(productos, producto_id)
+		cantidad = int(cantidad)
+		if producto is None:
+			raise Http404('Producto no encontrado')
+		if cantidad <= 0 or producto['stock'] < cantidad:
+			raise Http404('Stock insuficiente')
+		seleccionados.append((producto, cantidad))
+
+	for producto, cantidad in seleccionados:
+		producto['stock'] -= cantidad
+
+	_guardar_productos(productos)
+	request.session.pop(CLAVE_CARRITO, None)
+	return redirect('lista_productos')
 
 
 @login_required(login_url='login')
