@@ -43,7 +43,13 @@ def logout_view(request):
 
 
 def landing_page(request):
-	return render(request, 'catalogo/landing.html')
+	productos_destacados = [
+		producto for producto in _cargar_productos()
+		if producto['stock'] > 0
+	][:4]
+	return render(request, 'catalogo/landing.html', {
+		'productos_destacados': productos_destacados,
+	})
 
 
 def lista_productos(request):
