@@ -17,7 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+from catalogo import views as catalogo_views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('perfil/', catalogo_views.perfil_view, name='perfil'),
     path('', include('catalogo.urls')),
 ]

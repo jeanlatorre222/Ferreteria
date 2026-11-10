@@ -1,42 +1,49 @@
 {% extends 'catalogo/base.html' %}
+{% load static %}
 
 {% block title %}{{ modo }} producto | Ferretería{% endblock %}
+{% block body_class %}secondary-page product-form-page{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'catalogo/css/secondary.css' %}?v=2">
+{% endblock %}
+{% block main_class %}secondary-main product-form-main{% endblock %}
 
 {% block content %}
-<div class="row justify-content-center">
-    <div class="col-12 col-lg-8">
-        <div class="card shadow-sm">
-            <div class="card-body">
-                <h1 class="h3 mb-4">{{ modo }} producto</h1>
-                <form method="post" action="">
-                    {% csrf_token %}
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input id="nombre" name="nombre" class="form-control" autocomplete="off" required value="{{ producto.nombre|default:'' }}">
-                    </div>
-                    <div class="mb-3">
-                        <label for="categoria" class="form-label">Categoría</label>
-                        <input id="categoria" name="categoria" class="form-control" autocomplete="off" required value="{{ producto.categoria|default:'' }}">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="precio" class="form-label">Precio</label>
-                            <input id="precio" name="precio" type="number" min="0" step="1" class="form-control" required value="{{ producto.precio|default:0 }}">
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="stock" class="form-label">Stock</label>
-                            <input id="stock" name="stock" type="number" min="0" step="1" class="form-control" required value="{{ producto.stock|default:0 }}">
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="imagen" class="form-label">URL de imagen</label>
-                        <input id="imagen" name="imagen" type="url" class="form-control" autocomplete="url" required value="{{ producto.imagen|default:'' }}">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Guardar</button>
-                    <a href="{% url 'lista_productos' %}" class="btn btn-secondary">Cancelar</a>
-                </form>
+<section class="precision-card product-form-card" aria-labelledby="product-form-title">
+    <p class="secondary-eyebrow"><span></span> Inventario / {{ modo }}</p>
+    <h1 id="product-form-title">{{ modo }} producto</h1>
+    <p class="secondary-lead">Completa los datos para mantener la información del catálogo actualizada.</p>
+    <form method="post" action="" class="secondary-form">
+        {% csrf_token %}
+        <div class="secondary-field">
+            <label for="nombre">Nombre del producto</label>
+            <input id="nombre" name="nombre" class="form-control" autocomplete="off" required value="{{ producto.nombre|default:'' }}">
+        </div>
+        <div class="secondary-field">
+            <label for="categoria">Categoría</label>
+            <input id="categoria" name="categoria" class="form-control" autocomplete="off" required value="{{ producto.categoria|default:'' }}">
+        </div>
+        <div class="secondary-form__row">
+            <div class="secondary-field">
+                <label for="precio">Precio</label>
+                <div class="secondary-input-prefix">
+                    <span>$</span>
+                    <input id="precio" name="precio" type="number" min="0" step="1" class="form-control" required value="{{ producto.precio }}">
+                </div>
+            </div>
+            <div class="secondary-field">
+                <label for="stock">Stock</label>
+                <input id="stock" name="stock" type="number" min="0" step="1" class="form-control" required value="{{ producto.stock }}">
             </div>
         </div>
-    </div>
-</div>
+        <div class="secondary-field">
+            <label for="imagen">URL de imagen</label>
+            <input id="imagen" name="imagen" type="url" class="form-control" autocomplete="url" required value="{{ producto.imagen|default:'' }}">
+        </div>
+        <div class="secondary-form__actions">
+            <button type="submit" class="secondary-button secondary-button--primary"><i class="bi bi-check2" aria-hidden="true"></i> Guardar producto</button>
+            <a href="{% url 'lista_productos' %}" class="secondary-button secondary-button--quiet">Cancelar</a>
+        </div>
+    </form>
+</section>
 {% endblock %}

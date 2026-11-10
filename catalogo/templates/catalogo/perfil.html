@@ -1,0 +1,160 @@
+{% extends 'catalogo/base.html' %}
+{% load humanize static %}
+
+{% block title %}Mi cuenta | Ferretería{% endblock %}
+{% block body_class %}secondary-page profile-page{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'catalogo/css/secondary.css' %}?v=3">
+<link rel="stylesheet" href="{% static 'catalogo/css/profile.css' %}?v=1">
+{% endblock %}
+{% block main_class %}profile-main{% endblock %}
+
+{% block content %}
+<div class="profile-shell">
+    <header class="profile-heading">
+        <div>
+            <p class="profile-eyebrow"><span></span> ESPACIO PERSONAL / CUENTA</p>
+            <h1>Mi cuenta<span>.</span></h1>
+            <p>Administra tu información y consulta el estado de tus compras.</p>
+        </div>
+        <div class="profile-identity">
+            <span class="profile-identity__icon"><i class="bi bi-person" aria-hidden="true"></i></span>
+            <span><strong>{{ user.get_full_name|default:user.username }}</strong><small>@{{ user.username }}</small></span>
+        </div>
+    </header>
+
+    <div class="profile-overview" aria-label="Resumen de la cuenta">
+        <div class="profile-overview__card">
+            <span class="profile-overview__icon"><i class="bi bi-receipt" aria-hidden="true"></i></span>
+            <span><small>Pedidos realizados</small><strong>{{ cantidad_pedidos }}</strong></span>
+        </div>
+        <div class="profile-overview__card">
+            <span class="profile-overview__icon profile-overview__icon--gold"><i class="bi bi-calendar3" aria-hidden="true"></i></span>
+            <span><small>Cliente desde</small><strong>{{ user.date_joined|date:"Y" }}</strong></span>
+        </div>
+    </div>
+
+    <div class="profile-layout">
+        <aside class="profile-sidebar" aria-label="Navegación de cuenta">
+            <p class="profile-sidebar__label">MI ESPACIO</p>
+            <nav>
+                <a class="is-active" href="#datos-personales"><i class="bi bi-person" aria-hidden="true"></i> Datos personales</a>
+                <a href="#historial-compras"><i class="bi bi-receipt" aria-hidden="true"></i> Historial de compras <span>{{ cantidad_pedidos }}</span></a>
+                <a href="#direcciones"><i class="bi bi-geo-alt" aria-hidden="true"></i> Direcciones</a>
+                <a href="#configuracion"><i class="bi bi-sliders" aria-hidden="true"></i> Configuración</a>
+            </nav>
+            <a class="profile-sidebar__logout" href="{% url 'logout' %}"><i class="bi bi-box-arrow-left" aria-hidden="true"></i> Cerrar sesión</a>
+        </aside>
+
+        <div class="profile-content">
+            <section class="profile-panel" id="datos-personales" aria-labelledby="personal-title">
+                <div class="profile-panel__heading">
+                    <div>
+                        <p class="profile-section-index">01 / PERFIL</p>
+                        <h2 id="personal-title">Datos personales</h2>
+                        <p>Información asociada a tu cuenta.</p>
+                    </div>
+                    <span class="profile-panel__mark"><i class="bi bi-person-vcard" aria-hidden="true"></i></span>
+                </div>
+
+                <form method="post" class="profile-form">
+                    {% csrf_token %}
+                    <div class="profile-form__readonly">
+                        <span><small>Nombre de usuario</small><strong>{{ user.username }}</strong></span>
+                        <span><small>Miembro desde</small><strong>{{ user.date_joined|date:"d/m/Y" }}</strong></span>
+                    </div>
+                    <div class="profile-form__grid">
+                        <div class="secondary-field">
+                            <label for="{{ formulario.first_name.id_for_label }}">{{ formulario.first_name.label }}</label>
+                            {{ formulario.first_name }}
+                            {% for error in formulario.first_name.errors %}<span class="secondary-error">{{ error }}</span>{% endfor %}
+                        </div>
+                        <div class="secondary-field">
+                            <label for="{{ formulario.last_name.id_for_label }}">{{ formulario.last_name.label }}</label>
+                            {{ formulario.last_name }}
+                            {% for error in formulario.last_name.errors %}<span class="secondary-error">{{ error }}</span>{% endfor %}
+                        </div>
+                        <div class="secondary-field profile-form__email">
+                            <label for="{{ formulario.email.id_for_label }}">{{ formulario.email.label }}</label>
+                            {{ formulario.email }}
+                            {% for error in formulario.email.errors %}<span class="secondary-error">{{ error }}</span>{% endfor %}
+                        </div>
+                    </div>
+                    {% if formulario.non_field_errors %}
+                    <div class="secondary-alert" role="alert">{{ formulario.non_field_errors }}</div>
+                    {% endif %}
+                    <div class="profile-form__actions">
+                        <button class="secondary-button secondary-button--primary" type="submit"><i class="bi bi-check2" aria-hidden="true"></i> Guardar cambios</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="profile-panel" id="historial-compras" aria-labelledby="orders-title">
+                <div class="profile-panel__heading">
+                    <div>
+                        <p class="profile-section-index">02 / ACTIVIDAD</p>
+                        <h2 id="orders-title">Historial de compras</h2>
+                        <p>Consulta tus pedidos y el detalle de cada compra.</p>
+                    </div>
+                    <span class="profile-panel__count">{{ cantidad_pedidos }} PEDIDO{{ cantidad_pedidos|pluralize:"S" }}</span>
+                </div>
+
+                {% if pedidos %}
+                <div class="profile-orders">
+                    {% for pedido in pedidos %}
+                    <article class="profile-order">
+                        <div class="profile-order__main">
+                            <span class="profile-order__icon"><i class="bi bi-box-seam" aria-hidden="true"></i></span>
+                            <div>
+                                <span class="profile-order__number">PEDIDO #{{ pedido.id }}</span>
+                                <time datetime="{{ pedido.creado|date:'c' }}">{{ pedido.creado|date:"d/m/Y · H:i" }}</time>
+                            </div>
+                        </div>
+                        <span class="profile-order__status"><i></i>{{ pedido.get_estado_display }}</span>
+                        <strong class="profile-order__total">${{ pedido.total|intcomma }}</strong>
+                        <details class="profile-order__details">
+                            <summary>Ver detalle <i class="bi bi-chevron-down" aria-hidden="true"></i></summary>
+                            <ul>
+                                {% for item in pedido.items.all %}
+                                <li><span>{{ item.nombre_producto }} <small>× {{ item.cantidad }}</small></span><strong>${{ item.subtotal|intcomma }}</strong></li>
+                                {% endfor %}
+                            </ul>
+                        </details>
+                    </article>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="profile-empty">
+                    <span class="profile-empty__icon"><i class="bi bi-bag" aria-hidden="true"></i></span>
+                    <h3>Aún no tienes compras realizadas</h3>
+                    <p>Cuando completes una compra con tu cuenta, aparecerá aquí.</p>
+                    <a href="{% url 'lista_productos' %}">Explorar catálogo <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+                </div>
+                {% endif %}
+            </section>
+
+            <section class="profile-panel profile-panel--compact" id="direcciones" aria-labelledby="addresses-title">
+                <div class="profile-panel__heading">
+                    <div>
+                        <p class="profile-section-index">03 / ENTREGA</p>
+                        <h2 id="addresses-title">Direcciones</h2>
+                        <p>La gestión de direcciones estará disponible próximamente.</p>
+                    </div>
+                    <span class="profile-panel__mark"><i class="bi bi-geo-alt" aria-hidden="true"></i></span>
+                </div>
+            </section>
+
+            <section class="profile-panel profile-panel--compact" id="configuracion" aria-labelledby="settings-title">
+                <div class="profile-panel__heading">
+                    <div>
+                        <p class="profile-section-index">04 / PREFERENCIAS</p>
+                        <h2 id="settings-title">Configuración</h2>
+                        <p>Las preferencias de cuenta estarán disponibles próximamente.</p>
+                    </div>
+                    <span class="profile-panel__mark"><i class="bi bi-sliders" aria-hidden="true"></i></span>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock %}

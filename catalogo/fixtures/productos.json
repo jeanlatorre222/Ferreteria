@@ -1,0 +1,442 @@
+[
+  {
+    "model": "catalogo.producto",
+    "pk": 1,
+    "fields": {
+      "nombre": "Taladro percutor inalámbrico 20 V",
+      "categoria": "Herramientas",
+      "precio": 89990,
+      "stock": 8,
+      "imagen": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 2,
+    "fields": {
+      "nombre": "Martillo carpintero de uña 16 oz",
+      "categoria": "Herramientas",
+      "precio": 12990,
+      "stock": 24,
+      "imagen": "https://images.unsplash.com/photo-1581147036324-c1c4c7a8?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 3,
+    "fields": {
+      "nombre": "Set de destornilladores punta plana y cruz",
+      "categoria": "Herramientas",
+      "precio": 15990,
+      "stock": 15,
+      "imagen": "https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 4,
+    "fields": {
+      "nombre": "Alicate universal aislado 8 pulgadas",
+      "categoria": "Herramientas",
+      "precio": 11990,
+      "stock": 0,
+      "imagen": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 5,
+    "fields": {
+      "nombre": "Llave ajustable cromada 10 pulgadas",
+      "categoria": "Herramientas",
+      "precio": 18990,
+      "stock": 11,
+      "imagen": "https://images.unsplash.com/photo-1581147036324-c1c4c7a8?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 6,
+    "fields": {
+      "nombre": "Cinta métrica reforzada 5 m",
+      "categoria": "Herramientas",
+      "precio": 5990,
+      "stock": 32,
+      "imagen": "https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 7,
+    "fields": {
+      "nombre": "Esmeril angular 4 1/2 pulgadas 900 W",
+      "categoria": "Herramientas",
+      "precio": 49990,
+      "stock": 6,
+      "imagen": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 8,
+    "fields": {
+      "nombre": "Serrucho carpintero 20 pulgadas",
+      "categoria": "Herramientas",
+      "precio": 9990,
+      "stock": 0,
+      "imagen": "https://images.unsplash.com/photo-1581147036324-c1c4c7a8?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 9,
+    "fields": {
+      "nombre": "Esmalte sintético brillante blanco 1 galón",
+      "categoria": "Pinturas",
+      "precio": 29990,
+      "stock": 9,
+      "imagen": "https://images.unsplash.com/photo-1581783898377-1c85bf937427?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 10,
+    "fields": {
+      "nombre": "Rodillo de lana para pintar 18 cm",
+      "categoria": "Pinturas",
+      "precio": 4990,
+      "stock": 27,
+      "imagen": "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 11,
+    "fields": {
+      "nombre": "Cemento Portland saco 25 kg",
+      "categoria": "Materiales",
+      "precio": 5490,
+      "stock": 40,
+      "imagen": "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 12,
+    "fields": {
+      "nombre": "Plancha de yeso-cartón estándar 10 mm",
+      "categoria": "Materiales",
+      "precio": 8990,
+      "stock": 0,
+      "imagen": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 13,
+    "fields": {
+      "nombre": "Terciado estructural pino 15 mm 1,22 x 2,44 m",
+      "categoria": "Materiales",
+      "precio": 24990,
+      "stock": 13,
+      "imagen": "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 14,
+    "fields": {
+      "nombre": "Madera pino dimensionado 2 x 3 pulgadas x 3,2 m",
+      "categoria": "Materiales",
+      "precio": 6990,
+      "stock": 36,
+      "imagen": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 15,
+    "fields": {
+      "nombre": "Pack de tornillos para madera zincados 100 unidades",
+      "categoria": "Materiales",
+      "precio": 4990,
+      "stock": 25,
+      "imagen": "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 16,
+    "fields": {
+      "nombre": "Clavos corrientes 2 pulgadas 1 kg",
+      "categoria": "Materiales",
+      "precio": 3290,
+      "stock": 18,
+      "imagen": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 17,
+    "fields": {
+      "nombre": "Adhesivo cerámico en polvo saco 25 kg",
+      "categoria": "Materiales",
+      "precio": 7990,
+      "stock": 0,
+      "imagen": "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 18,
+    "fields": {
+      "nombre": "Lana mineral aislante rollo 50 mm",
+      "categoria": "Materiales",
+      "precio": 22990,
+      "stock": 7,
+      "imagen": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 19,
+    "fields": {
+      "nombre": "Pintura látex interior blanco invierno 1 galón",
+      "categoria": "Pinturas",
+      "precio": 24990,
+      "stock": 20,
+      "imagen": "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 20,
+    "fields": {
+      "nombre": "Brocha profesional de 2 pulgadas",
+      "categoria": "Pinturas",
+      "precio": 2990,
+      "stock": 30,
+      "imagen": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 21,
+    "fields": {
+      "nombre": "Cable eléctrico EVA 2,5 mm² rollo 100 m",
+      "categoria": "Electricidad",
+      "precio": 69990,
+      "stock": 0,
+      "imagen": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 22,
+    "fields": {
+      "nombre": "Interruptor simple blanco embutido",
+      "categoria": "Electricidad",
+      "precio": 2990,
+      "stock": 22,
+      "imagen": "https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 23,
+    "fields": {
+      "nombre": "Enchufe doble 10 A blanco embutido",
+      "categoria": "Electricidad",
+      "precio": 3990,
+      "stock": 28,
+      "imagen": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 24,
+    "fields": {
+      "nombre": "Automático monopolar 16 A curva C",
+      "categoria": "Electricidad",
+      "precio": 5990,
+      "stock": 14,
+      "imagen": "https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 25,
+    "fields": {
+      "nombre": "Ampolleta LED E27 luz cálida 9 W",
+      "categoria": "Electricidad",
+      "precio": 1990,
+      "stock": 50,
+      "imagen": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 26,
+    "fields": {
+      "nombre": "Alargador eléctrico domiciliario 10 m",
+      "categoria": "Electricidad",
+      "precio": 12990,
+      "stock": 0,
+      "imagen": "https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 27,
+    "fields": {
+      "nombre": "Caja de distribución embutida 12 módulos",
+      "categoria": "Electricidad",
+      "precio": 18990,
+      "stock": 5,
+      "imagen": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 28,
+    "fields": {
+      "nombre": "Cinta aisladora PVC negra 20 m",
+      "categoria": "Electricidad",
+      "precio": 1490,
+      "stock": 41,
+      "imagen": "https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 29,
+    "fields": {
+      "nombre": "Pintura anticorrosiva gris 1 galón",
+      "categoria": "Pinturas",
+      "precio": 27990,
+      "stock": 10,
+      "imagen": "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 30,
+    "fields": {
+      "nombre": "Bandeja para pintura plástica mediana",
+      "categoria": "Pinturas",
+      "precio": 1990,
+      "stock": 3,
+      "imagen": "https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 31,
+    "fields": {
+      "nombre": "Pasta muro interior blanca balde 1 galón",
+      "categoria": "Pinturas",
+      "precio": 9990,
+      "stock": 0,
+      "imagen": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 32,
+    "fields": {
+      "nombre": "Diluyente sintético lata 1 litro",
+      "categoria": "Pinturas",
+      "precio": 4990,
+      "stock": 16,
+      "imagen": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 33,
+    "fields": {
+      "nombre": "Sifón extensible para lavaplatos",
+      "categoria": "Gasfitería",
+      "precio": 5990,
+      "stock": 12,
+      "imagen": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 34,
+    "fields": {
+      "nombre": "Tubo PVC sanitario 110 mm x 3 m",
+      "categoria": "Gasfitería",
+      "precio": 11990,
+      "stock": 19,
+      "imagen": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 35,
+    "fields": {
+      "nombre": "Grifería monomando para lavaplatos",
+      "categoria": "Gasfitería",
+      "precio": 39990,
+      "stock": 4,
+      "imagen": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 36,
+    "fields": {
+      "nombre": "Cinta teflón para gasfitería 12 mm x 10 m",
+      "categoria": "Gasfitería",
+      "precio": 1290,
+      "stock": 0,
+      "imagen": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 37,
+    "fields": {
+      "nombre": "Desagüe cromado para lavamanos",
+      "categoria": "Gasfitería",
+      "precio": 8990,
+      "stock": 8,
+      "imagen": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 38,
+    "fields": {
+      "nombre": "Válvula de admisión universal para estanque WC",
+      "categoria": "Gasfitería",
+      "precio": 10990,
+      "stock": 6,
+      "imagen": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 39,
+    "fields": {
+      "nombre": "Pasta para soldar estaño 100 g",
+      "categoria": "Gasfitería",
+      "precio": 4990,
+      "stock": 21,
+      "imagen": "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=80"
+    }
+  },
+  {
+    "model": "catalogo.producto",
+    "pk": 40,
+    "fields": {
+      "nombre": "Llave de jardín bronce 1/2 pulgada",
+      "categoria": "Gasfitería",
+      "precio": 7990,
+      "stock": 0,
+      "imagen": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=800&q=80"
+    }
+  }
+]

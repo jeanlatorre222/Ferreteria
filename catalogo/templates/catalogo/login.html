@@ -1,38 +1,41 @@
 {% extends 'catalogo/base.html' %}
+{% load static %}
 
 {% block title %}Iniciar sesión | Ferretería{% endblock %}
+{% block body_class %}secondary-page auth-page{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'catalogo/css/secondary.css' %}?v=2">
+{% endblock %}
+{% block main_class %}secondary-main auth-main{% endblock %}
 
 {% block content %}
-<div class="row justify-content-center">
-    <div class="col-12 col-md-6 col-lg-4">
-        <div class="card shadow-sm">
-            <div class="card-body">
-                <h1 class="h3 mb-4">Iniciar sesión</h1>
-                <form method="post">
-                    {% csrf_token %}
-                    {% if formulario.non_field_errors %}
-                    <div class="alert alert-danger" role="alert">
-                        {{ formulario.non_field_errors }}
-                    </div>
-                    {% endif %}
-                    <div class="mb-3">
-                        <label for="id_username" class="form-label">Usuario</label>
-                        {{ formulario.username }}
-                        {% for error in formulario.username.errors %}
-                        <div class="text-danger small">{{ error }}</div>
-                        {% endfor %}
-                    </div>
-                    <div class="mb-3">
-                        <label for="id_password" class="form-label">Contraseña</label>
-                        {{ formulario.password }}
-                        {% for error in formulario.password.errors %}
-                        <div class="text-danger small">{{ error }}</div>
-                        {% endfor %}
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100">Entrar</button>
-                </form>
-            </div>
+<section class="precision-card auth-card" aria-labelledby="login-title">
+    <p class="secondary-eyebrow"><span></span> Acceso seguro</p>
+    <h1 id="login-title">Iniciar sesión</h1>
+    <p class="secondary-lead">Accede para administrar tus productos y continuar con tu compra.</p>
+    <form method="post" class="secondary-form">
+        {% csrf_token %}
+        {% if formulario.non_field_errors %}
+        <div class="secondary-alert" role="alert">
+            {{ formulario.non_field_errors }}
         </div>
-    </div>
-</div>
+        {% endif %}
+        <div class="secondary-field">
+            <label for="id_username">Usuario</label>
+            {{ formulario.username }}
+            {% for error in formulario.username.errors %}
+            <div class="secondary-error">{{ error }}</div>
+            {% endfor %}
+        </div>
+        <div class="secondary-field">
+            <label for="id_password">Contraseña</label>
+            {{ formulario.password }}
+            {% for error in formulario.password.errors %}
+            <div class="secondary-error">{{ error }}</div>
+            {% endfor %}
+        </div>
+        <button type="submit" class="secondary-button secondary-button--primary">Entrar <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+    </form>
+    <a class="secondary-back-link" href="{% url 'lista_productos' %}"><i class="bi bi-arrow-left" aria-hidden="true"></i> Volver al catálogo</a>
+</section>
 {% endblock %}

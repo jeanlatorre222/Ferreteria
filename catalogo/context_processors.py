@@ -1,10 +1,4 @@
-import json
-from pathlib import Path
-
-from django.conf import settings
-
-
-PRODUCTOS_JSON = Path(settings.BASE_DIR) / 'catalogo' / 'data' / 'productos.json'
+from .models import Producto
 
 
 def carrito(request):
@@ -12,10 +6,17 @@ def carrito(request):
     if not carrito_sesion:
         return {'carrito_items': [], 'carrito_total': 0, 'carrito_cantidad': 0}
 
-    with PRODUCTOS_JSON.open(encoding='utf-8') as archivo:
-        productos = json.load(archivo)
+    ids_producto = []
+    for producto_id in carrito_sesion:
+        try:
+            ids_producto.append(int(producto_id))
+        except (TypeError, ValueError):
+            continue
 
-    productos_por_id = {str(producto['id']): producto for producto in productos}
+    productos_por_id = {
+        str(producto.id): producto
+        for producto in Producto.objects.filter(id__in=ids_producto)
+    }
     items = []
     total = 0
     cantidad_total = 0
@@ -24,8 +25,11 @@ def carrito(request):
         producto = productos_por_id.get(str(producto_id))
         if producto is None:
             continue
-        cantidad = int(cantidad)
-        subtotal = producto['precio'] * cantidad
+        try:
+            cantidad = int(cantidad)
+        except (TypeError, ValueError):
+            continue
+        subtotal = producto.precio * cantidad
         items.append({
             'producto': producto,
             'cantidad': cantidad,

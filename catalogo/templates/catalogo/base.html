@@ -1,3 +1,4 @@
+{% load humanize static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,6 +7,7 @@
 	<title>{% block title %}Ferretería{% endblock %}</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+	<link href="{% static 'catalogo/css/cart.css' %}?v=3" rel="stylesheet">
 	{% block extra_head %}{% endblock %}
 </head>
 <body class="{% block body_class %}bg-light{% endblock %}">
@@ -13,14 +15,15 @@
 		<div class="container-fluid px-3 px-lg-5">
 			<a class="navbar-brand" href="{% url 'landing_page' %}">Ferretería</a>
 			<div class="navbar-nav ms-auto">
-				<button class="btn btn-outline-light position-relative me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas" aria-controls="carritoOffcanvas" title="Abrir carrito">
+				<button class="btn btn-outline-light position-relative me-3 cart-trigger" type="button" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas" aria-controls="carritoOffcanvas" title="Abrir carrito">
 					<i class="bi bi-cart3" aria-hidden="true"></i>
 					<span class="visually-hidden">Carrito de compras</span>
 					{% if carrito_cantidad %}<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ carrito_cantidad }}</span>{% endif %}
 				</button>
 				{% if user.is_authenticated %}
-				<a class="nav-link" href="{% url 'crear_producto' %}">Crear Producto</a>
-				<a class="nav-link" href="{% url 'logout' %}">Cerrar Sesión</a>
+					<a class="nav-link" href="{% url 'perfil' %}"><i class="bi bi-person-circle me-1"></i>Mi cuenta</a>
+					<a class="nav-link" href="{% url 'crear_producto' %}">Crear Producto</a>
+					<a class="nav-link" href="{% url 'logout' %}">Cerrar Sesión</a>
 				{% else %}
 				<a class="btn btn-outline-light btn-sm" href="{% url 'login' %}">Iniciar Sesión</a>
 				{% endif %}
@@ -28,46 +31,87 @@
 		</div>
 	</nav>
 
-	<div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas" aria-labelledby="carritoOffcanvasLabel">
-		<div class="offcanvas-header">
-			<h2 class="offcanvas-title h5" id="carritoOffcanvasLabel">Carrito de compras</h2>
-			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+	{% if messages %}
+	<div class="container pt-3" aria-live="polite">
+		{% for message in messages %}
+		<div class="alert alert-{{ message.tags|default:'info' }} alert-dismissible fade show" role="alert">
+			{{ message }}
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
 		</div>
-		<div class="offcanvas-body d-flex flex-column">
+		{% endfor %}
+	</div>
+	{% endif %}
+
+	<div class="offcanvas offcanvas-end cart-drawer" tabindex="-1" id="carritoOffcanvas" aria-labelledby="carritoOffcanvasLabel">
+		<div class="offcanvas-header cart-drawer__header">
+			<div>
+				<p class="cart-drawer__eyebrow"><span></span> TU SELECCIÓN</p>
+				<h2 class="offcanvas-title" id="carritoOffcanvasLabel">Carrito de compras</h2>
+				{% if carrito_cantidad %}<p class="cart-drawer__summary">{{ carrito_cantidad }} producto{{ carrito_cantidad|pluralize:"s" }} en tu carrito</p>{% endif %}
+			</div>
+			<button type="button" class="btn-close cart-drawer__close" data-bs-dismiss="offcanvas" aria-label="Cerrar carrito"></button>
+		</div>
+		<div class="offcanvas-body cart-drawer__body{% if not carrito_items %} cart-drawer__body--empty{% endif %}">
 			{% if carrito_items %}
-			<div class="list-group list-group-flush mb-3">
+			<div class="cart-items" aria-label="Productos en el carrito">
 				{% for item in carrito_items %}
-				<div class="list-group-item px-0">
-					<div class="d-flex justify-content-between gap-2">
-						<div>
-							<strong>{{ item.producto.nombre }}</strong>
-							<div class="small text-muted">${{ item.producto.precio }} x {{ item.cantidad }}</div>
+				<article class="cart-item">
+					<a class="cart-item__thumb" href="{% url 'detalle_producto' item.producto.id %}" aria-label="Ver {{ item.producto.nombre }}">
+						{% if item.producto.imagen %}
+						<img src="{{ item.producto.imagen }}" alt="" loading="lazy">
+						{% else %}
+						<i class="bi bi-box-seam" aria-hidden="true"></i>
+						{% endif %}
+					</a>
+					<div class="cart-item__content">
+						<div class="cart-item__heading">
+							<div>
+								<p class="cart-item__category">{{ item.producto.categoria }}</p>
+								<h3><a href="{% url 'detalle_producto' item.producto.id %}">{{ item.producto.nombre }}</a></h3>
+							</div>
+							<strong class="cart-item__subtotal">${{ item.subtotal|intcomma }}</strong>
 						</div>
-						<strong>${{ item.subtotal }}</strong>
+						<p class="cart-item__unit-price">${{ item.producto.precio|intcomma }} <span>· unidad</span></p>
+						<div class="cart-item__controls">
+							<div class="cart-quantity" role="group" aria-label="Modificar cantidad de {{ item.producto.nombre }}">
+								<a href="{% url 'restar_carrito' item.producto.id %}" aria-label="Restar una unidad de {{ item.producto.nombre }}">−</a>
+								<form method="post" action="{% url 'actualizar_cantidad_carrito' item.producto.id %}">
+									{% csrf_token %}
+									<input type="number" name="cantidad" min="0" max="{{ item.producto.stock }}" value="{{ item.cantidad }}" aria-label="Cantidad de {{ item.producto.nombre }}" onchange="this.form.submit()">
+								</form>
+								<a href="{% url 'sumar_carrito' item.producto.id %}" aria-label="Sumar una unidad de {{ item.producto.nombre }}">+</a>
+							</div>
+							<a class="cart-item__remove" href="{% url 'eliminar_del_carrito' item.producto.id %}" aria-label="Eliminar {{ item.producto.nombre }} del carrito" title="Eliminar producto">
+								<i class="bi bi-trash3" aria-hidden="true"></i>
+							</a>
+						</div>
 					</div>
-					<div class="btn-group btn-group-sm mt-2" role="group" aria-label="Modificar cantidad">
-						<a class="btn btn-outline-secondary" href="{% url 'restar_carrito' item.producto.id %}" aria-label="Restar una unidad">&lt;</a>
-						<span class="btn btn-outline-secondary disabled">{{ item.cantidad }}</span>
-						<a class="btn btn-outline-secondary" href="{% url 'sumar_carrito' item.producto.id %}" aria-label="Sumar una unidad">&gt;</a>
-						<a class="btn btn-outline-danger" href="{% url 'eliminar_del_carrito' item.producto.id %}" aria-label="Eliminar producto del carrito" title="Eliminar producto">
-							<i class="bi bi-trash" aria-hidden="true"></i>
-						</a>
-					</div>
-				</div>
+				</article>
 				{% endfor %}
 			</div>
-			<div class="mt-auto border-top pt-3">
-				<div class="d-flex justify-content-between fw-bold mb-3">
-					<span>Total a pagar</span>
-					<span>${{ carrito_total }}</span>
-				</div>
-				<a href="{% url 'finalizar_compra' %}" class="btn btn-success w-100">Finalizar Pseudo Compra</a>
-				<a href="{% url 'vaciar_carrito' %}" class="d-block text-center text-danger mt-2">Vaciar carrito</a>
-			</div>
 			{% else %}
-			<p class="text-muted">Tu carrito está vacío.</p>
+			<div class="cart-empty">
+				<span class="cart-empty__icon"><i class="bi bi-bag" aria-hidden="true"></i></span>
+				<h3>Tu carrito está vacío</h3>
+				<p>Cuando encuentres lo que necesitas, aquí estará esperándote.</p>
+				<a href="{% url 'lista_productos' %}">Explorar catálogo <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+			</div>
 			{% endif %}
 		</div>
+		{% if carrito_items %}
+		<div class="cart-drawer__footer">
+			<div class="cart-drawer__total">
+				<span>Total a pagar</span>
+				<strong>${{ carrito_total|intcomma }}</strong>
+			</div>
+			<p class="cart-drawer__shipping-note"><i class="bi bi-shield-check" aria-hidden="true"></i> Compra protegida</p>
+				<form method="post" action="{% url 'procesar_compra' %}">
+					{% csrf_token %}
+				<button type="submit" class="cart-checkout">Finalizar compra <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+				</form>
+			<a href="{% url 'vaciar_carrito' %}" class="cart-clear">Vaciar carrito</a>
+		</div>
+		{% endif %}
 	</div>
 
 	<main class="{% block main_class %}container py-4{% endblock %}">

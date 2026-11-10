@@ -4,7 +4,7 @@
     "nombre": "Martillo de uña 16 oz",
     "categoria": "Herramientas manuales",
     "precio": 18,
-    "stock": 23,
+    "stock": 14,
     "imagen": "https://olateferreteria.cl/wp-content/uploads/2025/01/Martillo-Carpintero-Una-Curva-16oz-TRUPER.png"
   },
   {
@@ -12,7 +12,7 @@
     "nombre": "Destornillador plano 6 mm",
     "categoria": "Herramientas manuales",
     "precio": 7,
-    "stock": 34,
+    "stock": 32,
     "imagen": "https://i5.walmartimages.cl/asr/47983451-fd94-453f-b785-734db9b40656.ce572dbf1072e7e4d99f656d8d59ed0f.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
   },
   {
@@ -20,7 +20,7 @@
     "nombre": "Destornillador Phillips mediano",
     "categoria": "Herramientas manuales",
     "precio": 8,
-    "stock": 27,
+    "stock": 26,
     "imagen": "https://media.witglobal.net/source/eshop/stmedia/0100/images/std.lang.all/resolutions/category/200px/151303.jpg"
   },
   {
@@ -36,7 +36,7 @@
     "nombre": "Llave inglesa 10 pulgadas",
     "categoria": "Herramientas manuales",
     "precio": 21,
-    "stock": 12,
+    "stock": 11,
     "imagen": "https://loremflickr.com/640/480/adjustable,wrench?lock=5"
   },
   {
@@ -44,7 +44,7 @@
     "nombre": "Cinta métrica 5 metros",
     "categoria": "Medición",
     "precio": 11,
-    "stock": 31,
+    "stock": 30,
     "imagen": "https://loremflickr.com/640/480/tape,measure?lock=6"
   },
   {
@@ -52,7 +52,7 @@
     "nombre": "Nivel de burbuja 40 cm",
     "categoria": "Medición",
     "precio": 14,
-    "stock": 16,
+    "stock": 15,
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_654054-MLU76381289248_052024-O.webp"
   },
   {
@@ -68,7 +68,7 @@
     "nombre": "Serrucho de carpintero 20 pulgadas",
     "categoria": "Corte",
     "precio": 19,
-    "stock": 9,
+    "stock": 7,
     "imagen": "https://cdnx.jumpseller.com/casa-contigo/image/47103789/HAND_SAW.png?1711653514"
   },
   {
@@ -76,7 +76,7 @@
     "nombre": "Cúter profesional retráctil",
     "categoria": "Corte",
     "precio": 6,
-    "stock": 40,
+    "stock": 39,
     "imagen": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRa89-awjDdknT33v9mPjPhQQ85LmqWAD1HXGo73rIItr8wYbqR2ODT5WpPzfVQGOrm_mfy0wiAQFYP6VmoU5CN5Ohfsyi-"
   },
   {
@@ -100,7 +100,7 @@
     "nombre": "Broca para concreto 8 mm",
     "categoria": "Accesorios eléctricos",
     "precio": 5,
-    "stock": 27,
+    "stock": 26,
     "imagen": "https://cdnx.jumpseller.com/ferroelectronic/image/37253613/044650.png?1697570988"
   },
   {
@@ -108,7 +108,7 @@
     "nombre": "Broca para madera 10 mm",
     "categoria": "Accesorios eléctricos",
     "precio": 5,
-    "stock": 23,
+    "stock": 22,
     "imagen": "https://isesacl.vtexassets.com/arquivos/ids/155790/broca_madera_hss_cv_profi_holz_alpen_1_8.jpg?v=637178017185670000"
   },
   {
@@ -116,7 +116,7 @@
     "nombre": "Disco de corte para metal 115 mm",
     "categoria": "Accesorios eléctricos",
     "precio": 3,
-    "stock": 45,
+    "stock": 44,
     "imagen": "https://loremflickr.com/640/480/cutting,disc,metal?lock=15"
   },
   {
@@ -140,7 +140,7 @@
     "nombre": "Gafas de protección transparentes",
     "categoria": "Seguridad",
     "precio": 6,
-    "stock": 29,
+    "stock": 28,
     "imagen": "https://bioquimica.cl/wp-content/uploads/2026/06/qw66fgevu1npsg0dsl2h_2196x1260.webp"
   },
   {
@@ -148,7 +148,7 @@
     "nombre": "Mascarilla antipolvo reutilizable",
     "categoria": "Seguridad",
     "precio": 12,
-    "stock": 18,
+    "stock": 17,
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_914865-CBT113335565849_062026-O-mascarilla-antipolvo-reutilizable-con-filtro-de-carbon.webp"
   },
   {
@@ -172,7 +172,7 @@
     "nombre": "Tornillo autorroscante 3 x 25 mm",
     "categoria": "Tornillería",
     "precio": 7,
-    "stock": 95,
+    "stock": 94,
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbRQ92oZgHwG8xmH0N8W8-pQBQQl45ShpZeRTP4_gAoA&s=10"
   },
   {
@@ -180,7 +180,7 @@
     "nombre": "Tuerca hexagonal M8",
     "categoria": "Tornillería",
     "precio": 2,
-    "stock": 150,
+    "stock": 149,
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQliKXgpRW4V7Z3v75QBroy8fgSTP4zS45WwKAkIObuTw&s"
   },
   {
@@ -188,7 +188,7 @@
     "nombre": "Arandela plana M8",
     "categoria": "Tornillería",
     "precio": 1,
-    "stock": 200,
+    "stock": 199,
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_610852-CBT111710649184_062026-O-arandela-plana-m8-de-acero-304-85-x-16-x-1-mm-40-unidades.webp"
   },
   {
@@ -196,7 +196,7 @@
     "nombre": "Anclaje plástico 8 mm",
     "categoria": "Fijaciones",
     "precio": 3,
-    "stock": 75,
+    "stock": 74,
     "imagen": "https://http2.mlstatic.com/D_Q_NP_2X_990801-MLA99579775460_122025-P.webp"
   },
   {
@@ -212,7 +212,7 @@
     "nombre": "Cola blanca para madera 250 ml",
     "categoria": "Adhesivos",
     "precio": 9,
-    "stock": 26,
+    "stock": 25,
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxFmdyePaa_PJtlBak2kRszoWHUxekfKXe77n2YvDHuA&s=10"
   },
   {
@@ -220,7 +220,7 @@
     "nombre": "Silicona transparente 280 ml",
     "categoria": "Adhesivos",
     "precio": 8,
-    "stock": 21,
+    "stock": 20,
     "imagen": "https://www.construmart.cl/media/catalog/product/s/i/silicona-aceitica-universal-multiuso-280-ml-transp-244398-1_v3vbr7d79d2i9x72.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
   },
   {
@@ -228,7 +228,7 @@
     "nombre": "Cinta adhesiva de doble cara",
     "categoria": "Adhesivos",
     "precio": 5,
-    "stock": 32,
+    "stock": 31,
     "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlonwGHmVC9PgbI8ev-Mt4q9Oq-bStcN8VKHcLvuZ4H99bl9hhnBWqM9w&s=10"
   },
   {
@@ -236,7 +236,7 @@
     "nombre": "Pintura acrílica blanca 1 litro",
     "categoria": "Pinturas",
     "precio": 17,
-    "stock": 14,
+    "stock": 13,
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_882128-MLA105117992730_012026-O.webp"
   },
   {
@@ -252,7 +252,7 @@
     "nombre": "Brocha plana 2 pulgadas",
     "categoria": "Pinturas",
     "precio": 6,
-    "stock": 25,
+    "stock": 24,
     "imagen": "https://cdnx.jumpseller.com/a-los-pits/image/68904769/ChatGPT_20Image_2019_20oct_202025_2C_2000_11_52.png?1761068168"
   },
   {
@@ -268,7 +268,7 @@
     "nombre": "Manguera reforzada 15 metros",
     "categoria": "Jardinería",
     "precio": 29,
-    "stock": 11,
+    "stock": 10,
     "imagen": "https://www.miferreteria.cl/wp-content/uploads/2025/08/manguera-riego-1-2x15-metros-everest-kg01-1215.jpg"
   },
   {
@@ -276,7 +276,7 @@
     "nombre": "Pistola de riego regulable",
     "categoria": "Jardinería",
     "precio": 14,
-    "stock": 17,
+    "stock": 16,
     "imagen": "https://loremflickr.com/640/480/garden,spray,nozzle?lock=36"
   },
   {
@@ -300,23 +300,7 @@
     "nombre": "Bisagra reforzada 3 pulgadas",
     "categoria": "Herrajes",
     "precio": 4,
-    "stock": 38,
+    "stock": 36,
     "imagen": "https://http2.mlstatic.com/D_NQ_NP_907006-MLU74387580095_022024-O.webp"
-  },
-  {
-    "id": 39,
-    "nombre": "Cerrojo para puerta  invierno",
-    "categoria": "Cerrajería",
-    "precio": 22,
-    "stock": 0,
-    "imagen": "https://media.falabella.com/falabellaCL/148859167_01/w=1500,h=1500,fit=cover"
-  },
-  {
-    "id": 40,
-    "nombre": "Espuma expansiva 750 ml",
-    "categoria": "Adhesivos",
-    "precio": 8,
-    "stock": 18,
-    "imagen": "https://dojiw2m9tvv09.cloudfront.net/44838/product/X_new-template-photoroom-529593.png?2506&t=1788312469"
   }
 ]
